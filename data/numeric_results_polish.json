@@ -1,0 +1,369 @@
+{
+  "parameters": {
+    "N_B": 256,
+    "Lambda": 2.0,
+    "W": 16.0,
+    "gamma_over_Lambda": [
+      0.01,
+      0.04,
+      0.1,
+      0.2
+    ],
+    "full_horizon": 125.0,
+    "transient_ceiling_horizon": 80.0,
+    "t_recurrence": 100.53096491487338
+  },
+  "scope": "Exact scalar convolution in the unitary single-excitation sector; excited initial state, uniform finite bath. No general superoperator or Born-error claim.",
+  "prospective_inputs": "Bare detunings, g_squared, prescribed m(t)=exp(-gamma*t/2). No diagonalization or exact target trajectory in reference_only_bound().",
+  "numerical_status": "Analytical inequality evaluated with converged quadrature; no interval-arithmetic certificate.",
+  "reference_only_compute_seconds": 5.1070493000152055,
+  "reference_only_convergence": [
+    {
+      "gamma_over_Lambda": 0.01,
+      "coarse_dt": 0.0025,
+      "fine_dt": 0.00125,
+      "max_population_bound_difference": 1.3223190764577453e-08,
+      "max_amplitude_bound_difference": 1.3135061352823052e-08,
+      "endpoints": {
+        "0.01": {
+          "coarse": 100.5923431653911,
+          "fine": 100.59234452061254,
+          "absolute_difference": 1.3552214426226783e-06
+        },
+        "0.02": {
+          "coarse": 101.43792395465915,
+          "fine": 101.43792445270965,
+          "absolute_difference": 4.980504968443711e-07
+        },
+        "0.05": {
+          "coarse": 103.40998534468707,
+          "fine": 103.40998568905397,
+          "absolute_difference": 3.443668958880153e-07
+        },
+        "0.1": {
+          "coarse": 106.47461781675078,
+          "fine": 106.47461818281668,
+          "absolute_difference": 3.660659047000081e-07
+        }
+      },
+      "max_actual_population_error_minus_bound": 8.881784197001252e-16
+    },
+    {
+      "gamma_over_Lambda": 0.04,
+      "coarse_dt": 0.0025,
+      "fine_dt": 0.00125,
+      "max_population_bound_difference": 5.422998050619299e-08,
+      "max_amplitude_bound_difference": 5.3565483382200796e-08,
+      "endpoints": {
+        "0.01": {
+          "coarse": 0.14274006738392064,
+          "fine": 0.14273981853142212,
+          "absolute_difference": 2.4885249852446556e-07
+        },
+        "0.02": {
+          "coarse": 0.3499661632799213,
+          "fine": 0.34996665316477926,
+          "absolute_difference": 4.898848579570902e-07
+        },
+        "0.05": {
+          "coarse": 102.77564390408658,
+          "fine": 102.77564439103239,
+          "absolute_difference": 4.869458081202538e-07
+        },
+        "0.1": {
+          "coarse": 104.08720446904024,
+          "fine": 104.08720489006245,
+          "absolute_difference": 4.210222073197656e-07
+        }
+      },
+      "max_actual_population_error_minus_bound": 9.547918011776346e-15
+    },
+    {
+      "gamma_over_Lambda": 0.1,
+      "coarse_dt": 0.0025,
+      "fine_dt": 0.00125,
+      "max_population_bound_difference": 1.4025898376068824e-07,
+      "max_amplitude_bound_difference": 1.3510104221459152e-07,
+      "endpoints": {
+        "0.01": {
+          "coarse": 0.05260277057622219,
+          "fine": 0.05260265033204466,
+          "absolute_difference": 1.2024417752470873e-07
+        },
+        "0.02": {
+          "coarse": 0.11162320482633523,
+          "fine": 0.11162202661727177,
+          "absolute_difference": 1.178209063451563e-06
+        },
+        "0.05": {
+          "coarse": 0.36430338352985814,
+          "fine": 0.3643028920147517,
+          "absolute_difference": 4.915151064488477e-07
+        },
+        "0.1": {
+          "coarse": 101.75117105640649,
+          "fine": 101.7511718795738,
+          "absolute_difference": 8.231673120917549e-07
+        }
+      },
+      "max_actual_population_error_minus_bound": 3.774758283725532e-15
+    },
+    {
+      "gamma_over_Lambda": 0.2,
+      "coarse_dt": 0.0025,
+      "fine_dt": 0.00125,
+      "max_population_bound_difference": 2.5726701957662357e-07,
+      "max_amplitude_bound_difference": 2.576394825537509e-07,
+      "endpoints": {
+        "0.01": {
+          "coarse": 0.025688568695609218,
+          "fine": 0.02568763363676171,
+          "absolute_difference": 9.350588475072474e-07
+        },
+        "0.02": {
+          "coarse": 0.05290594658321119,
+          "fine": 0.05290538222873851,
+          "absolute_difference": 5.643544726818828e-07
+        },
+        "0.05": {
+          "coarse": 0.14701516158209185,
+          "fine": 0.14701446892717981,
+          "absolute_difference": 6.926549120378489e-07
+        },
+        "0.1": {
+          "coarse": 0.3942244299976211,
+          "fine": 0.39422382254901395,
+          "absolute_difference": 6.074486071372398e-07
+        }
+      },
+      "max_actual_population_error_minus_bound": 6.661338147750939e-15
+    }
+  ],
+  "exact_validation_compute_seconds": 1.5612486000172794,
+  "reference_only_windows": [
+    {
+      "N_B": 256,
+      "gamma_over_Lambda": 0.01,
+      "gamma": 0.02,
+      "tolerance": 0.01,
+      "horizon": 125.0,
+      "bound_end": 100.59234452061254,
+      "observed_exit": 101.13573955832504,
+      "ratio": 0.9946270720905825
+    },
+    {
+      "N_B": 256,
+      "gamma_over_Lambda": 0.01,
+      "gamma": 0.02,
+      "tolerance": 0.02,
+      "horizon": 125.0,
+      "bound_end": 101.43792445270965,
+      "observed_exit": 101.86345710730015,
+      "ratio": 0.995822519020317
+    },
+    {
+      "N_B": 256,
+      "gamma_over_Lambda": 0.01,
+      "gamma": 0.02,
+      "tolerance": 0.05,
+      "horizon": 125.0,
+      "bound_end": 103.40998568905397,
+      "observed_exit": 103.85582354765131,
+      "ratio": 0.9957071462786795
+    },
+    {
+      "N_B": 256,
+      "gamma_over_Lambda": 0.01,
+      "gamma": 0.02,
+      "tolerance": 0.1,
+      "horizon": 125.0,
+      "bound_end": 106.47461818281668,
+      "observed_exit": 107.08106177259899,
+      "ratio": 0.9943365934205045
+    },
+    {
+      "N_B": 256,
+      "gamma_over_Lambda": 0.04,
+      "gamma": 0.08,
+      "tolerance": 0.01,
+      "horizon": 125.0,
+      "bound_end": 0.14273981853142212,
+      "observed_exit": 0.1427799475972113,
+      "ratio": 0.999718944666499
+    },
+    {
+      "N_B": 256,
+      "gamma_over_Lambda": 0.04,
+      "gamma": 0.08,
+      "tolerance": 0.02,
+      "horizon": 125.0,
+      "bound_end": 0.34996665316477926,
+      "observed_exit": 0.35080400079377694,
+      "ratio": 0.9976130613473536
+    },
+    {
+      "N_B": 256,
+      "gamma_over_Lambda": 0.04,
+      "gamma": 0.08,
+      "tolerance": 0.05,
+      "horizon": 125.0,
+      "bound_end": 102.77564439103239,
+      "observed_exit": 103.38748973550454,
+      "ratio": 0.9940820176015741
+    },
+    {
+      "N_B": 256,
+      "gamma_over_Lambda": 0.04,
+      "gamma": 0.08,
+      "tolerance": 0.1,
+      "horizon": 125.0,
+      "bound_end": 104.08720489006245,
+      "observed_exit": 104.90493687608702,
+      "ratio": 0.9922050190355629
+    },
+    {
+      "N_B": 256,
+      "gamma_over_Lambda": 0.1,
+      "gamma": 0.2,
+      "tolerance": 0.01,
+      "horizon": 125.0,
+      "bound_end": 0.05260265033204466,
+      "observed_exit": 0.05260696485842919,
+      "ratio": 0.9999179856432293
+    },
+    {
+      "N_B": 256,
+      "gamma_over_Lambda": 0.1,
+      "gamma": 0.2,
+      "tolerance": 0.02,
+      "horizon": 125.0,
+      "bound_end": 0.11162202661727177,
+      "observed_exit": 0.1116682901985262,
+      "ratio": 0.9995857052958169
+    },
+    {
+      "N_B": 256,
+      "gamma_over_Lambda": 0.1,
+      "gamma": 0.2,
+      "tolerance": 0.05,
+      "horizon": 125.0,
+      "bound_end": 0.3643028920147517,
+      "observed_exit": 0.3669095517901301,
+      "ratio": 0.9928956339166951
+    },
+    {
+      "N_B": 256,
+      "gamma_over_Lambda": 0.1,
+      "gamma": 0.2,
+      "tolerance": 0.1,
+      "horizon": 125.0,
+      "bound_end": 101.7511718795738,
+      "observed_exit": 102.33057132200739,
+      "ratio": 0.9943379633774313
+    },
+    {
+      "N_B": 256,
+      "gamma_over_Lambda": 0.2,
+      "gamma": 0.4,
+      "tolerance": 0.01,
+      "horizon": 125.0,
+      "bound_end": 0.02568763363676171,
+      "observed_exit": 0.025688207772399642,
+      "ratio": 0.999977649836726
+    },
+    {
+      "N_B": 256,
+      "gamma_over_Lambda": 0.2,
+      "gamma": 0.4,
+      "tolerance": 0.02,
+      "horizon": 125.0,
+      "bound_end": 0.05290538222873851,
+      "observed_exit": 0.052914108127654985,
+      "ratio": 0.9998350931495353
+    },
+    {
+      "N_B": 256,
+      "gamma_over_Lambda": 0.2,
+      "gamma": 0.4,
+      "tolerance": 0.05,
+      "horizon": 125.0,
+      "bound_end": 0.14701446892717981,
+      "observed_exit": 0.14724798944603135,
+      "ratio": 0.9984141004591637
+    },
+    {
+      "N_B": 256,
+      "gamma_over_Lambda": 0.2,
+      "gamma": 0.4,
+      "tolerance": 0.1,
+      "horizon": 125.0,
+      "bound_end": 0.39422382254901395,
+      "observed_exit": 0.402467520074697,
+      "ratio": 0.9795171110350643
+    }
+  ],
+  "baseline_prefactor_comparison": {
+    "exact_amplitude_prefactor": 102.57975388341832,
+    "one_plus_cutoff_amplitude": 22.412688412228906,
+    "constant_two": 11.443932694762507,
+    "note": "Only population prefactor changed; these older cutoff estimates retain the exact-trajectory speed."
+  },
+  "continuum_transient_ceiling": [
+    {
+      "gamma_over_Lambda": 0.01,
+      "gamma": 0.02,
+      "horizon": 80.0,
+      "peak_time": 2.0728981058180938,
+      "delta_star": 0.00942775535870144,
+      "finite_peak_time": 2.0728595209977128,
+      "finite_delta_star": 0.00942775090668535,
+      "gauss_max_population_difference": 4.474198789239381e-14,
+      "finite_N256_to_continuum_max_population_difference_0_to80": 2.0824253549323046e-07
+    },
+    {
+      "gamma_over_Lambda": 0.04,
+      "gamma": 0.08,
+      "horizon": 80.0,
+      "peak_time": 1.5096721255424035,
+      "delta_star": 0.033777433993341544,
+      "finite_peak_time": 1.5096850571754319,
+      "finite_delta_star": 0.03377742868906841,
+      "gauss_max_population_difference": 3.963496197911809e-14,
+      "finite_N256_to_continuum_max_population_difference_0_to80": 7.66298595411552e-08
+    },
+    {
+      "gamma_over_Lambda": 0.1,
+      "gamma": 0.2,
+      "horizon": 80.0,
+      "peak_time": 1.0950852384396181,
+      "delta_star": 0.07309366483684632,
+      "finite_peak_time": 1.095082292029152,
+      "finite_delta_star": 0.07309366247887727,
+      "gauss_max_population_difference": 4.5852210917018965e-14,
+      "finite_N256_to_continuum_max_population_difference_0_to80": 7.159505241438602e-08
+    },
+    {
+      "gamma_over_Lambda": 0.2,
+      "gamma": 0.4,
+      "horizon": 80.0,
+      "peak_time": 0.8567520199935096,
+      "delta_star": 0.12335365502852236,
+      "finite_peak_time": 0.8567528668194859,
+      "finite_delta_star": 0.1233536718274093,
+      "gauss_max_population_difference": 4.340972026284362e-14,
+      "finite_N256_to_continuum_max_population_difference_0_to80": 7.281396921521299e-08
+    }
+  ],
+  "short_time_scaling": {
+    "minimum_normalized_tolerance": 0.0001,
+    "maximum_normalized_tolerance": 0.2,
+    "minimum_tolerance_ratios": {
+      "0.01": 1.0000402613089845,
+      "0.04": 1.0000373313844997,
+      "0.1": 1.0000345046080998,
+      "0.2": 1.0000321981678015
+    },
+    "expansion": "D(t)=gamma*t-(sum(g2)+gamma^2/2)*t^2+O(t^3); t_delta=delta/gamma+O(delta^2)."
+  },
+  "time_seconds": 11.492865000007441
+}

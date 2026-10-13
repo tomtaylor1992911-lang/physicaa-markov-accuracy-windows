@@ -1,0 +1,25 @@
+# Local Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Machine-local verification copies
+/verification/
+
+# Figure exports are generated; the publication snapshots are added explicitly.
+/figures/*.pdf
+/figures/*.svg
+/figures/*.png
+
+# Local settings and operating-system files
+.env
+.env.*
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
